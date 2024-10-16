@@ -3,23 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
+    <title>Página de Libros</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        h1 {
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
             color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>jajaxd</h1>
+    <header>
+        <h1>Bienvenido a Libros y Más</h1>
+        <nav>
+            <ul>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#autores">Autores</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reseñas">
+            <h2>Reseñas de Libros</h2>
+            <article>
+                <h3>Título del Libro</h3>
+                <p>Descripción breve y opinión sobre el libro.</p>
+            </article>
+            <article>
+                <h3>Otro Título</h3>
+                <p>Descripción breve y opinión sobre otro libro.</p>
+            </article>
+        </section>
+
+        <section id="noticias">
+            <h2>Últimas Noticias</h2>
+            <ul>
+                <li>Noticia 1 sobre libros o autores.</li>
+                <li>Noticia 2 sobre lanzamientos próximos.</li>
+            </ul>
+        </section>
+
+        <section id="autores">
+            <h2>Autores Destacados</h2>
+            <ul>
+                <li>Autor 1</li>
+                <li>Autor 2</li>
+                <li>Autor 3</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Libros y Más. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
-
